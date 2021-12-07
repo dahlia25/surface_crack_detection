@@ -1,5 +1,6 @@
 # Project: Surface Crack Detection
 
+<<<<<<< HEAD
 **Affiliation:** San Jose State University <br>
 **Program:** M.S. Data Analytics (MSDA) <br>
 **Course:** DATA 255 - Deep Learning <br>
@@ -51,3 +52,6 @@ To perform test accuracy with the augmented dataset:
 
 **d) How to run MobileNet model (by Ashima Malik)**
 <br><br>
+=======
+
+>>>>>>> 26885269245069ce95ec202add4f6722d536bccf
