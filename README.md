@@ -39,7 +39,7 @@ Dataset contains concrete images collected from METU campus buildings. Contains 
 <br><br>
 
 **c) How to run VGG-16 model (by Catherine Cho)** 
-<br><br>
+<br>
 To train the model (using Keras):
 1. Download the METU dataset, and change the directory name to be "0" for negative (no crack images) and "1" for positive (has crack images). 
 2. The trained model was saved and included as ‘VGG16_crack_detection_v1.h5’ and also the history file was saved as ‘history_vgg16_v1.csv’
@@ -47,7 +47,41 @@ To train the model (using Keras):
 To perform test accuracy with the augmented dataset:
 1. Load the saved model (‘VGG16_crack_detection_v1.h5’) and, 
 2. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’)
-<br>
+<br><br>
 
 **d) How to run MobileNet model (by Ashima Malik)**
+<br>
+To train the model:
+1. After downloading the METU dataset, place the Positive and Negative directories under data/Train directory. 
+2. The trained model was saved under the **code/ashima** directory named as "Crack_Detection_MobileNet_model.h5", and the history file was saved as "history_MobileNet_model.csv".
+
+To perform test accuracy with the augmented dataset:
+1. Load the saved model (‘Crack_Detection_MobileNet_model.h5’) and, 
+2. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’)
 <br><br>
+
+**e) How to run ResNet50 model (by Tanyu Yin)**
+<br>
+To train the model:
+1. After downloading the METU dataset, create negative/positive directories to store the dataset by class; where "Negative" refers to 0, and "Positive" refers to 1. 
+2. Use the "ResNet50.ipynb" file located in **code/Tanyu** directory, and update the file path to your own. Then run the whole notebook.
+
+To perform test accuracy with the augmented dataset:
+1. Download and open "ResNet50_augmt.ipynb" located in **code/Tanyu** directory.
+2. Load the saved model (‘ResNet50_model.h5’).
+3. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’), and run the codes afterwards.
+<br><br>
+
+**f) How to run ResNet50 model (by Jie Hu)**
+<br>
+To preprocess and organize dataset:
+1. After downloading the METU dataset, create negative/positive directories to store the dataset by class; where "Negative" refers to 0, and "Positive" refers to 1. 
+2. Download and open the "Crack_Images_augument.ipynb" file located in **code/hujie** directory. 
+3. Use the "data_split.ipynb" to choose 10,000 random images from augmented data, and then save all selected images to local (where "Negative" refers to 0 and "Positive" refers to 1 in directory name to store images for testing).
+
+To train and test the model:
+1. Use the "Project_crack.ipynb" file located in **code/hujie** directory, and update the data file path to your own. Then run the whole notebook.
+<br><br>
+
+**g) How to run LeNet5 model (by Dahlia Ma)**
+<br>
