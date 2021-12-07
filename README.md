@@ -72,7 +72,7 @@ To perform test accuracy with the augmented dataset:
 3. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’), and run the codes afterwards.
 <br><br>
 
-**f) How to run ResNet50 model (by Jie Hu)**
+**f) How to run CNN model (by Jie Hu)**
 <br>
 To preprocess and organize dataset:
 1. After downloading the METU dataset, create negative/positive directories to store the dataset by class; where "Negative" refers to 0, and "Positive" refers to 1. 
