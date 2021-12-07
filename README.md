@@ -8,6 +8,8 @@
 
 ## Introduction
 This project compared the performance of the following six image classification neural networks for detecting surface cracks: VGG-16, MobileNet, ResNet50, CNN, LeNet5, and OLeNet. 
+
+The project report generated using LaTeX can be found in the **project_report** directory.
 <br><br>
 
 ## Contributions
@@ -38,7 +40,19 @@ Dataset contains concrete images collected from METU campus buildings. Contains 
 * os, glob, cv2
 <br><br>
 
-**c) How to run VGG-16 model (by Catherine Cho)** 
+**c) How to perform image augmentation**
+1. Download the "data_augmentation.ipynb" file located in **code/dahlia** directory.
+2. In the downloaded file, update the following variables to the correct file path set up in your local:
+    * **img_files**: the directory file path to either negative (0) or positive (1) images
+    * **img_folder**: the directory file path to either negative (0) or positive (1) images
+    * **pos_img_save_folder**: the directory file path to save positive augmented images
+    * **pos_img_src_folder**: the directory file path that contains the positive (crack) images from original dataset
+    * **neg_img_save_folder**: the directory file path to save negative augmented images
+    * **neg_img_src_folder**: the directory file path that contains the negative (no crack) images from original dataset
+3. After updating the mentioned variables in step 2, run all code cells in Jupyter notebook.
+<br><br>
+
+**d) How to run VGG-16 model (by Catherine Cho)** 
 <br>
 To train the model (using Keras):
 1. Download the METU dataset, and change the directory name to be "0" for negative (no crack images) and "1" for positive (has crack images). 
@@ -49,7 +63,7 @@ To perform test accuracy with the augmented dataset:
 2. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’)
 <br><br>
 
-**d) How to run MobileNet model (by Ashima Malik)**
+**e) How to run MobileNet model (by Ashima Malik)**
 <br>
 To train the model:
 1. After downloading the METU dataset, place the Positive and Negative directories under data/Train directory. 
@@ -60,7 +74,7 @@ To perform test accuracy with the augmented dataset:
 2. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’)
 <br><br>
 
-**e) How to run ResNet50 model (by Tanyu Yin)**
+**f) How to run ResNet50 model (by Tanyu Yin)**
 <br>
 To train the model:
 1. After downloading the METU dataset, create negative/positive directories to store the dataset by class; where "Negative" refers to 0, and "Positive" refers to 1. 
@@ -72,7 +86,7 @@ To perform test accuracy with the augmented dataset:
 3. Load the Pytorch object which contains 1,000 augmented image tensor (‘small_1000_set.pth’), and run the codes afterwards.
 <br><br>
 
-**f) How to run CNN model (by Jie Hu)**
+**g) How to run CNN model (by Jie Hu)**
 <br>
 To preprocess and organize dataset:
 1. After downloading the METU dataset, create negative/positive directories to store the dataset by class; where "Negative" refers to 0, and "Positive" refers to 1. 
@@ -83,5 +97,5 @@ To train and test the model:
 1. Use the "Project_crack.ipynb" file located in **code/hujie** directory, and update the data file path to your own. Then run the whole notebook.
 <br><br>
 
-**g) How to run LeNet5 model (by Dahlia Ma)**
+**h) How to run LeNet5 model (by Dahlia Ma)**
 <br>
