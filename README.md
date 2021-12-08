@@ -128,7 +128,11 @@ To train the model:
     * **data_dir**: the file path of the directory that contains both positive (1) and negative (0) images from the original METU dataset -- in 4th cell
     * **path**: the file path of the directory to split and save the test set of the original data to -- in 5th cell with the comment “generate and save test set”
     * **path**: the file path of the directory to save the trained model at each epoch -- in 8th cell that trains the model
+        * you can use "lenet5_lr0.001_cpu_epoch7.pth" in the **code/dahlia/lenet5_models** directory to load saved final model for LeNet5 with ReLU
+        * you can use "olenet_lr0.001_cpu_epoch4.pth" in the **code/dahlia/olenet_models** directory to load saved final model for OLeNet with SeLU
     * **path**: the file path of the saved trained model (.PTH Pytorch file) at a specific epoch -- in 11th cell under “calculate test accuracy” section
+        * you can use "lenet5_lr0.001_cpu_epoch7.pth" in the **code/dahlia/lenet5_models** directory to load saved final model for LeNet5 with ReLU
+        * you can use "olenet_lr0.001_cpu_epoch4.pth" in the **code/dahlia/olenet_models** directory to load saved final model for OLeNet with SeLU
     * **testset_path**: the file path of the split and saved test set of original data (.PTH file) generated from the 5th cell in 2b -- in 11th cell under “calculate test accuracy” section; this variable is not applicable to OLeNet models, as Google Colab could not load the saved splitted test set and calculate the accuracy due to the limited 12 GB of RAM
     * In the last code cell in IPYNB notebook that evaluates test accuracy using augmented test set (if this code cell exists), update **“path”** and **“testset_path”** variables accordingly like in step 2e; except, update the file path for “testset_path” that leads to the “small_1000_set.pth” augmented test set
 3. Run the IPYNB notebook to train model
